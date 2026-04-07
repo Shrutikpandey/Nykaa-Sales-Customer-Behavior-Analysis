@@ -23,7 +23,7 @@ Working with raw datasets required multiple preprocessing steps:
 
 ## 📊 Dashboard Preview
 
-![Dashboard Screenshot](Dashboard.png)
+![Dashboard Screenshot](Nykaa-Sales-Customer-Behavior-Analysis/Dashboard.png)
 
 
 ## 📈 Key Insights
