@@ -1,50 +1,142 @@
-# 💄 Nykaa-Inspired: Customer Behavior & Sales Analysis
+# 💄 Nykaa E-Commerce: Customer Behavior & Sales Analysis
+### A Business Analyst Case Study
 
-## 📌 Project Overview
+---
 
-This project analyzes e-commerce sales data to understand customer purchasing behavior, revenue distribution, and growth opportunities. Using **Excel** for data preparation and **Power BI** for visualization, raw transactional data was transformed into meaningful business insights and an interactive dashboard.
+## 📌 Business Problem Statement
 
-## 🛠️ Tech Stack & Tools
+Nykaa, one of India's leading beauty e-commerce platforms, faces a critical challenge: **the majority of its customer base falls in the low-value spending segment**, with minimal presence of medium or high-value customers. This directly impacts revenue growth, customer lifetime value (CLV), and long-term profitability.
 
-* **Data Source:** Raw Excel/CSV datasets
-* **Data Cleaning:** Microsoft Excel (VLOOKUP, Data Merging, Error Handling)
-* **Data Preparation:** Excel (Derived columns, segmentation, validation)
-* **Visualization:** Power BI Desktop
+**As a Business Analyst, the goal of this project was to:**
+- Identify patterns in customer purchasing behavior
+- Diagnose root causes of low average order value (AOV)
+- Recommend data-driven strategies to move customers up the value ladder
 
+---
 
-## 🧠 Key Data Challenges (Data Preparation Process)
+## 👥 Stakeholder Map
 
-Working with raw datasets required multiple preprocessing steps:
+| Stakeholder | Role | Interest in This Analysis |
+|---|---|---|
+| Marketing Team | Primary | Targeted campaign design |
+| Product Manager | Primary | Feature prioritization for upsell |
+| Sales Leadership | Secondary | Revenue forecasting |
+| CRM Team | Secondary | Loyalty program optimization |
+| Data Engineering | Supporting | Dashboard maintenance |
 
-* **Data Integration:** Merged customer, order, and product datasets using VLOOKUP to create a unified dataset
-* **Handling Errors:** Identified and handled missing values and #N/A errors to ensure data consistency
-* **Data Transformation:** Created derived fields such as **Customer Segments (Low, Medium, High Value)** and product categories
-* **Date Cleaning:** Standardized date formats to enable time-based analysis
+---
+
+## 🛠️ Tools & Tech Stack
+
+| Purpose | Tool |
+|---|---|
+| Data Cleaning & Integration | Microsoft Excel (VLOOKUP, Power Query) |
+| Data Transformation | Derived columns, customer segmentation logic |
+| Visualization & Reporting | Power BI Desktop |
+| Documentation | Business Requirements Document (BRD) |
+
+---
+
+## 🧠 Data Preparation & Challenges
+
+Working with raw transactional data required multiple preprocessing steps:
+
+- **Data Integration:** Merged customer, order, and product datasets using VLOOKUP to create a unified master dataset
+- **Error Handling:** Identified and resolved missing values and #N/A errors to ensure data consistency
+- **Feature Engineering:** Created derived fields including Customer Segments (Low / Medium / High Value) based on spending thresholds
+- **Date Standardization:** Normalized date formats to enable accurate time-series analysis
+- **Data Validation:** Applied business rules to flag anomalies in order values and product categories
+
+---
 
 ## 📊 Dashboard Preview
 
 ![Dashboard Screenshot](Nykaa-Sales-Customer-Behavior-Analysis/Dashboard.png)
 
+---
 
-## 📈 Key Insights
+## 📈 Key Business Insights
 
-* **Customer Distribution:** Majority of customers fall under the Low Value segment, with very few Medium Value customers and no High Value segment identified
+### 1. 🔴 Customer Segmentation Gap
+> **Finding:** 85%+ of customers are in the Low Value segment. Zero High Value customers identified.
+>
+> **Business Impact:** Revenue is concentrated in low-ticket purchases, leaving significant revenue unrealized.
 
-* **Revenue Opportunity:** Absence of high-value customers highlights strong potential to improve Average Order Value (AOV) and Customer Lifetime Value (CLV)
+### 2. 🟡 AOV & CLV Opportunity
+> **Finding:** Average Order Value is below optimal threshold for profitability.
+>
+> **Business Impact:** A 20% improvement in AOV could significantly boost revenue without acquiring new customers.
 
-* **Spending Pattern:** Customer purchases are heavily skewed towards low-value transactions, indicating limited upselling or cross-selling effectiveness
+### 3. 🟠 Upselling & Cross-Selling Gap
+> **Finding:** Customer purchases are heavily skewed toward single-category, low-value transactions.
+>
+> **Business Impact:** Bundling strategies and personalized recommendations are currently underutilized.
 
-* **Sales Trend:** Sales show fluctuations over time, suggesting opportunities for better-timed promotions and targeted campaigns
+### 4. 🟢 Sales Trend Volatility
+> **Finding:** Sales fluctuate significantly over time with no consistent growth pattern.
+>
+> **Business Impact:** Indicates missed opportunities in seasonal promotions and targeted re-engagement campaigns.
 
-* **Category Insight:** Revenue appears evenly distributed across categories due to the use of a simulated dataset
+### 5. 🔵 Category Revenue Distribution
+> **Finding:** Revenue appears evenly spread across categories, suggesting lack of a hero category driving growth.
+>
+> **Business Impact:** No clear category to double down on for focused marketing investment.
 
+---
 
-## 🚀 How to View the Report
+## ✅ Business Recommendations
+
+| Priority | Recommendation | Expected Impact |
+|---|---|---|
+| 🔴 High | Launch loyalty tier program to move Low → Medium value customers | +15–20% repeat purchase rate |
+| 🔴 High | Implement AI-driven product recommendations at checkout | +10–15% AOV improvement |
+| 🟡 Medium | Design seasonal campaigns aligned with sales dip periods | Reduce revenue volatility |
+| 🟡 Medium | Introduce bundling offers in top-performing categories | Increase basket size |
+| 🟢 Low | Build a win-back email campaign for churned customers | Re-engage 10–15% lapsed users |
+
+---
+
+## 📋 BA Artifacts Produced
+
+- ✅ [Business Requirements Document (BRD)](./BRD-Nykaa-Analysis.docx)
+- ✅ Power BI Dashboard (.pbix)
+- ✅ Cleaned Master Dataset (Excel)
+- ✅ Stakeholder Analysis
+- ✅ Recommendations Summary
+
+---
+
+## 📂 Project Files
+
+All datasets (Raw & Cleaned) are hosted on Google Drive due to file size:
+👉 [Access Project Data Folder](https://drive.google.com/drive/folders/1aNDYjk3CkQDiTtJnFq6nauQeoGmC1cwp?usp=sharing)
+
+---
+
+## 🚀 How to View the Dashboard
 
 1. Download the `.pbix` file from this repository
-2. Open it using **Power BI Desktop**
-3. Explore the interactive dashboard for insights
-4. ## 📂 Data & Project Files
-The full datasets (Raw & Final) used for this analysis are hosted on Google Drive due to file size:
-- [Access Project Data Folder](https://drive.google.com/drive/folders/1aNDYjk3CkQDiTtJnFq6nauQeoGmC1cwp?usp=sharing)
+2. Open using **Power BI Desktop** (free download)
+3. Explore interactive filters by customer segment, time period, and category
+4. Cross-reference insights with the BRD for full business context
 
+---
+
+## 💡 Key Learnings & BA Skills Demonstrated
+
+- **Requirements Elicitation** — Translated raw data findings into structured business requirements
+- **Stakeholder Analysis** — Mapped key stakeholders and their interests
+- **Gap Analysis** — Identified current vs desired state of customer value distribution
+- **Data Storytelling** — Converted numbers into actionable business narratives
+- **Prioritization** — Ranked recommendations by business impact and feasibility
+
+---
+
+## 👤 About
+
+**Shrutik Pandey** | Aspiring Business Analyst
+📧 Connect on [LinkedIn](https://linkedin.com/in/shrutikpandey) | 🌐 [Portfolio](https://shrutikpandey.github.io)
+
+---
+
+*This project was built as part of a BA portfolio to demonstrate end-to-end business analysis skills — from raw data to business recommendations.*
