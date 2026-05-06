@@ -98,7 +98,7 @@ Working with raw transactional data required multiple preprocessing steps:
 
 ## 📋 BA Artifacts Produced
 
-- ✅ [Business Requirements Document (BRD)](./BRD-Nykaa-Analysis.docx)
+- ✅ Nykaa-Sales-Customer-Behavior-Analysis/BRD-Nykaa-Analysis.pdf
 - ✅ Power BI Dashboard (.pbix)
 - ✅ Cleaned Master Dataset (Excel)
 - ✅ Stakeholder Analysis
